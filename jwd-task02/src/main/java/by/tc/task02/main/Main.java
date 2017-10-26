@@ -11,7 +11,7 @@ import by.tc.task02.utils.PrintXMLNode;
 
 public class Main {
 
-	private static final String FILE_PATH = "/food.xml";
+	private static final String FILE_PATH = "/task02.xml";
 
 	public static void main(String[] args) throws DAOLayerException {
 
