@@ -10,7 +10,6 @@ public class XMLParserUtils {
     private static final String BACK_SLASH = "/";
     private static final String CLOSE_BRACKET = ">";
     private static final String XML_INFO_PATTERN = "(<\\?)(.*)(\\?>)";
-    private static final String XML_COMMENTS_PATTERN = "(<!--)(.*)(-->)";
 
     public static boolean isOpenTag(CharIterator charIterator){
         String firstChar = charIterator.next();
@@ -68,7 +67,6 @@ public class XMLParserUtils {
         String result = xmlAsString;
 
         result = result.replaceAll(XML_INFO_PATTERN, EMPTY_VALUE);
-        result = result.replaceAll(XML_COMMENTS_PATTERN, EMPTY_VALUE);
 
         return result;
     }
